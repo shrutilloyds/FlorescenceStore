@@ -42,8 +42,7 @@ namespace FlorescenceStore
             da.Fill(ds);
 
             DataTable ChartData = ds.Tables[0];
-
-            //storing total rows count to loop on each Record  
+             
             string[] XPointMember = new string[ChartData.Rows.Count];
             int[] YPointMember = new int[ChartData.Rows.Count];
 
