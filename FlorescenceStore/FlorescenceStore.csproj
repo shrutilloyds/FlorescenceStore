@@ -50,6 +50,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -105,17 +106,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
-    <Content Include="Colors.jpg" />
-    <Content Include="Colors2.jpg" />
-    <Content Include="ColorsRegistration.jpg" />
-    <Content Include="Contact.aspx" />
+    <Content Include="BeneficierLogin.aspx" />
+    <Content Include="Beneficiers.aspx" />
+    <Content Include="ChartForm.aspx" />
+    <Content Include="contact.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Default.aspx" />
+    <Content Include="css\ie6.css" />
+    <Content Include="css\ie7.css" />
+    <Content Include="css\style.css" />
+    <Content Include="DistributorChartForm.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -129,7 +132,39 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Properties\PublishProfiles\florescence - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="RegColours.jpg" />
+    <Content Include="bg-header.jpg" />
+    <Content Include="images\backyard.jpg" />
+    <Content Include="images\backyard2.jpg" />
+    <Content Include="images\bg-content.gif" />
+    <Content Include="images\bg-footer.gif" />
+    <Content Include="images\bg-header.jpg" />
+    <Content Include="images\border.gif" />
+    <Content Include="images\border2.gif" />
+    <Content Include="images\bouquet.jpg" />
+    <Content Include="images\bouquet2.jpg" />
+    <Content Include="images\bouquet3.jpg" />
+    <Content Include="images\bridal-bouquet.jpg" />
+    <Content Include="images\bridal-bouquet2.jpg" />
+    <Content Include="images\bullet.gif" />
+    <Content Include="images\colon.gif" />
+    <Content Include="images\garden.jpg" />
+    <Content Include="images\garden2.jpg" />
+    <Content Include="images\heading-bg.gif" />
+    <Content Include="images\icons.gif" />
+    <Content Include="images\lady-handling-flower.jpg" />
+    <Content Include="images\lady-handling-flower2.jpg" />
+    <Content Include="images\logo.gif" />
+    <Content Include="images\menu-delete.gif" />
+    <Content Include="images\red-roses.jpg" />
+    <Content Include="images\roses.jpg" />
+    <Content Include="images\roses2.jpg" />
+    <Content Include="images\special-occasions-flowers.gif" />
+    <Content Include="images\speedwell.jpg" />
+    <Content Include="images\sunflower.jpg" />
+    <Content Include="images\tulips.jpg" />
+    <Content Include="Index.aspx" />
+    <Content Include="menu.gif" />
+    <Content Include="Login.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -160,6 +195,8 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="SupplierLogin.aspx" />
+    <Content Include="Suppliers.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -167,30 +204,51 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="BeneficierLogin.aspx.cs">
+      <DependentUpon>BeneficierLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="BeneficierLogin.aspx.designer.cs">
+      <DependentUpon>BeneficierLogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Beneficiers.aspx.cs">
+      <DependentUpon>Beneficiers.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Beneficiers.aspx.designer.cs">
+      <DependentUpon>Beneficiers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChartForm.aspx.cs">
+      <DependentUpon>ChartForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChartForm.aspx.designer.cs">
+      <DependentUpon>ChartForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DistributorChartForm.aspx.cs">
+      <DependentUpon>DistributorChartForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DistributorChartForm.aspx.designer.cs">
+      <DependentUpon>DistributorChartForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registration.aspx.cs">
@@ -213,6 +271,20 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierLogin.aspx.cs">
+      <DependentUpon>SupplierLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupplierLogin.aspx.designer.cs">
+      <DependentUpon>SupplierLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Suppliers.aspx.cs">
+      <DependentUpon>Suppliers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Suppliers.aspx.designer.cs">
+      <DependentUpon>Suppliers.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

@@ -11,7 +11,7 @@ namespace FlorescenceStore
 {
 
 
-    public partial class Registration
+    public partial class Login
     {
 
         /// <summary>
@@ -33,13 +33,13 @@ namespace FlorescenceStore
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// txtFullName control.
+        /// TextBox1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFullName;
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
 
         /// <summary>
         /// Label3 control.
@@ -51,49 +51,13 @@ namespace FlorescenceStore
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// txtEmail control.
+        /// TextBox2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmail;
-
-        /// <summary>
-        /// psw control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label psw;
-
-        /// <summary>
-        /// txtPsw control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPsw;
-
-        /// <summary>
-        /// lblRepeat control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRepeat;
-
-        /// <summary>
-        /// txtPswRepeat control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPswRepeat;
+        protected global::System.Web.UI.WebControls.TextBox TextBox2;
 
         /// <summary>
         /// lblCategory control.
@@ -123,12 +87,12 @@ namespace FlorescenceStore
         protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
-        /// Response control.
+        /// Label4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Response;
+        protected global::System.Web.UI.WebControls.Label Label4;
     }
 }
