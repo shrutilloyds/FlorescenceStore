@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="FlorescenceStore.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Florescence Store</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+
+</head>
+<body>
+    <form runat="server">
+        <div >
+            <div id="header">
+                <ul>
+                    <li><a href="Index.aspx">home</a></li>
+                    <li><a href="Login.aspx">login</a></li>
+                    <li><a href="Registration.aspx">Sign-up</a></li>
+                    <li><a href="Suppliers.aspx">Suppliers</a></li>
+                    <li><a href="Beneficiers.aspx">Distributors</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                </ul>
+                <div >
+                    <a href="index.html"><img src="images/logo.gif" alt=""/>
+                        <asp:Label ID="lblHighestSupplier" Font-Bold="True" Font-Italic="True" Font-Size="larger" ForeColor="Yellow" runat="server"></asp:Label>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer" style="padding-top: 100px;">
+            <div>
+                <div class="connect">
+                    <h4>Follow us:</h4>
+                    <ul>
+                        <li class="facebook"><a href="http://facebook.com/freewebsitetemplates" target="_blank">facebook</a></li>
+                        <li class="twitter"><a href="http://twitter.com/fwtemplates" target="_blank">twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
